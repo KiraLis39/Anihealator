@@ -1,6 +1,6 @@
 #IOM_SAVE
-#Mon May 03 11:12:57 MSK 2021
-propFile=.\\data\\config.txt
+#Wed Sep 29 11:15:12 MSK 2021
+propFile=./data/config.txt
 isAdminAllowed=true
 frameHeight=768
 frameWidth=1024
