@@ -1,0 +1,46 @@
+logging:
+  level:
+    root: INFO
+    sun.awt: INFO
+    javax.swing: INFO
+    java.awt: WARN
+    java.lang.Runtime: INFO
+    org.jboss.logging: INFO
+    org.springframework.orm.jpa: WARN
+    org.springframework.data.jpa: WARN
+    org.springframework.data.repository.config: WARN
+    org.hibernate: INFO
+    org.hibernate.cache.internal: WARN
+    org.hibernate.dialect.Dialect: WARN
+    org.hibernate.jpa.internal.util.LogHelper: WARN
+    org.hibernate.orm.connections: WARN
+    org.hibernate.engine.transaction.jta: WARN
+    com.zaxxer.hikari: WARN
+
+server:
+  port: 8080
+  shutdown: graceful
+  compression:
+    enabled: true
+
+  servlet:
+    context-path: ${SERVLET_CONTEXT_PATH:/aniheal}
+    encoding:
+      charset: UTF-8
+      enabled: true
+
+  error:
+    whitelabel:
+      enabled: true
+    path: /error
+    include-message: always
+    include-exception: true
+    include-binding-errors: on_param
+    include-stacktrace: on_param
+
+spring:
+  application:
+    name: AniHealator
+    version: 0.2.4.6
+    author: KiraLis39
+    company: Multiverse-39 Group, 2023
